@@ -15,8 +15,7 @@ document.getElementById('play-button').addEventListener('click', () => {
   }
 
   // URL API untuk mengonversi YouTube ke MP3
-  const apiUrl = `https://yt-download.org/api/button/mp3/${videoID}`;
-
+  const apiUrl = `https://cors-anywhere.herokuapp.com/https://yt-download.org/api/button/mp3/${videoID}`;
   // Mengambil audio dari API
   fetch(apiUrl)
     .then(response => {
